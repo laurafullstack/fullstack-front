@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+    <title>Pizzas Full Stack</title>
+</head>
+<body>
+    <header class="element-header">
+        <img src="/images/logo-pizza.png" alt="Logotipo de Pizza Full Stack">
+        <div class="title-header">
+            <h1>Pizzas Full Stack</h1>
+        </div>
+    </header>
+    <div class="container">
+        <form action="http://localhost:5000/pizza" method="post" id="formulario">
+            <div class="form-cliente">
+                <div>
+                    <h3>Datos del cliente</h3>
+                    <p>Rellena tus datos para realizar el pedido</p>
+                </div>
+                <div class="camp-form">
+                    <label id="label-nombre" for="nombre-cliente">Nombre del cliente</label>
+                    <input class="input" type="text" id="nombre-cliente" name="nombre-cliente" >
+                </div>
+                <div class="camp-form">   
+                    <label id="label-apellidos" for="apellidos-cliente">Apellidos del cliente</label>
+                    <input class="input" type="text" id="apellidos-cliente" name="apellidos-cliente" >
+                </div>
+                <div class="camp-form">
+                    <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                    <input class="input" type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+                </div>
+                <div class="camp-form">    
+                    <label for="telefono">Teléfono del cliente</label>
+                    <input class="input" type="tel" id="telefono" name="telefono" >
+                </div>
+                <div class="camp-form">
+                    <label for="direccion">Dirección</label>
+                    <textarea class="input area-texto" rows="1" cols="50" id="direccion"></textarea>
+                </div>    
+            </div>
+            <div class="form-pedido">
+                <div>
+                    <h3>Datos del pedido</h3>
+                    <p>Elige el tamaño de tu pizza Full Stack y los ingredientes</p>
+                </div>
+                <div class="camp-form">                    
+                    <label for="medida">Elige tamaño de pizza</label>
+                    <select class="input" id="medida" name="medida">
+                        <option id="small">Pequeña</option>
+                        <option id="medium">Mediana</option>
+                        <option id="big">Grande</option>
+                    </select>
+                </div>
+                <div class="camp-form">
+                    <label>Elige tus ingredientes</label>
+                    
+                    <label class="option" for="jamon-york">Jamón York</label>
+                    <input type="checkbox" id="jamon-york" name="jamon-york" >
+                    <label class="option" for="champiñones">Champiñones</label>
+                    <input type="checkbox" id="champiñones" name="champiñones" >
+                    <label class="option" for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="pepperoni" name="pepperoni" >
+                    <label class="option" for="aceitunas">Aceitunas</label>
+                    <input type="checkbox" id="aceitunas" name="aceitunas" >
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button-1" type="reset">Borrar</button>
+                <button class="button-2" type="submit">Realizar pedido</button>
+            </div>
+        </form>
+    </div>    
+    <script src="js/script.js"></script>
+</body>
+</html>

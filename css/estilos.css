@@ -1,0 +1,82 @@
+
+*{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}    
+.element-header{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.title-header{
+    margin-left: 20px;
+}
+
+.form-cliente{
+    background-color: #55ccff;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow:  2px 3px 10px 0px #888888;
+    display: block;
+}
+.form-pedido{
+    background-color: #40ccbb;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow:  2px 3px 10px 0px #888888;
+}
+.container{
+    margin: 40px;
+}
+.buttons{
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+.button-1{
+    background-color: #ffffff;
+    padding: 10px;
+    border-style: solid;
+    border-color: #282828;
+    border-radius: 5px;
+}
+.button-1:hover {
+    background-color:#282828;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.button-2{
+    background-color: #ffffff;
+    padding: 10px;
+    border-style: solid;
+    border-color: #282828;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.button-2:hover {
+    background-color:#282828;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.camp-form{
+    display: block;
+}
+.camp-form label, .camp-form input{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+label{
+    display: inline-block;
+    width: 200px;
+}
+.input{
+    width: 230px;
+    margin-left: 20px;
+}
+.option{
+    margin-left: 20px;
+    width: auto !important;
+}
